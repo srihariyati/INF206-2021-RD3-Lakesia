@@ -38,12 +38,22 @@
             </table>
         </form>
         
-        <div class="text3">Belum punya akun?</div>
-        <div class="text4">Daftar disini</div>
+        <div class= "text3">Belum punya akun? </div>
+        <div class="daftar">
+            <a href=#box>Daftar disini</a>.</div>
         <div class="foot"></div>
         <div class="text5">© 2021 Made by Tim RD 3</div>
 
-    </body>
+        
+           <div id="box">
+               Daftar sebagai <br><br>
+               <a href=daftar/lansia class="lansia"> Lansia </a><br>
+               <a href=daftar/perawat class="perawat"> Perawat </a><br>
+               <a href=# class="batal"> x </a>
+            </div>
+        
+
+        
 
     
 

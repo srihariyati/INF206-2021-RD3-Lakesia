@@ -9,8 +9,8 @@
         <div class="row">
             <div class="column">
                 <img class="Background-Menu" src="\img\Rectangle 309.png"/>
-                <div class="Button Riwayat-Pasien">Riwayat Pasien</div>
-                <div class="Button Obat-Pasien">Obat Pasien</div>
+                <a href=riwayatpasien class= "Button Riwayat-Pasien">Riwayat Pasien</a>
+                <a href=daftarobat class="Button Obat-Pasien">Obat Pasien</a>
                 <div class="Text-Menu">MENU</div>
             </div>
 

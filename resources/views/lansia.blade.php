@@ -11,8 +11,9 @@
         <div class="row">
             <div class="column">
                 <img class="Background-Menu" src="\img\Rectangle 309.png"/>
-                <div class="Button Lihat-Riwayat">Lihat Riwayat</div>           
-                <button class="Button CheckUp-Sekarang">CheckUp Sekarang</button>
+                
+                <a href=lihatriwayat class="Button Lihat-Riwayat">Lihat Riwayat</a>
+                <a href=checkupsekarang class="Button CheckUp-Sekarang"> CheckUp Sekarang</a>
                 <div class="Button Emergency">EMERGENCY</div>
                 <div class="Text-Menu">MENU</div>
             </div>

@@ -105,7 +105,6 @@ input[type=password] {
 
 button {
     background-color: #1EA5FC;
-    ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -117,6 +116,7 @@ button {
 
 button:hover {
     opacity: 0.8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .text3 {
@@ -134,12 +134,12 @@ button:hover {
     color: #000000;
 }
 
-.text4 {
+.daftar {
     position: absolute;
     position: absolute;
     width: 97px;
     height: 17px;
-    left: 1181px;
+    left: 1180px;
     top: 510px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -147,7 +147,9 @@ button:hover {
     font-size: 13px;
     line-height: 108.1%;
     letter-spacing: 0.05em;
+    /*
     color: #141FF3;
+    */
 }
 
 .text5 {
@@ -172,4 +174,94 @@ button:hover {
     height: 75px;
     top: 670px;
     background: linear-gradient(180deg, rgba(54, 107, 193, 0.7) 0%, rgba(30, 165, 252, 0.86) 100%);
+}
+
+
+/**
+Pop up
+*/
+
+#box {
+    background-color: #ffffff;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000000;
+    display: none;
+    position: absolute;
+    top: 500px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#box:target {
+    display: block;
+}
+
+.batal {
+    width: 20px;
+    height: 20px;
+    background: #1EA5FC;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.lansia {
+    display: inline-block;
+    background-color: #1EA5FC;
+    padding-inline-start: 0%;
+    color: white;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 14pt;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.perawat {
+    display: inline-block;
+    background-color: #1EA5FC;
+    color: white;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 14pt;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.batal:hover {
+    opacity: 0.8;
+}
+
+.lansia:hover {
+    opacity: 0.8;
+    font-size: 18pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.perawat:hover {
+    opacity: 0.8;
+    font-size: 18pt;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
