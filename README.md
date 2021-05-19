@@ -1,1 +1,0 @@
-# INF206-2021-RD3-Lakesia
