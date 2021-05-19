@@ -16,6 +16,8 @@
         <div> <img class="medical-logo" src="/img/Medical-Logo.png" alt="Medical Logo"> </div>
         <div> <img class="profile-logo" src="/img/Profile-Logo.png" alt="Profile Logo"> </div>
         
+        <div >
+
         <form method="post">
             <table class="login">
                 <tr>
@@ -34,6 +36,9 @@
                 </tr>
                 <tr>
                     <td><button type="submit">Login</button></td>
+                    <td>    
+                       <br><br> <a class="masukperawat" href=masukperawat>Masuk Sebagai Perawat</a>
+                    </td>    
                 </tr>
             </table>
         </form>
@@ -41,6 +46,7 @@
         <div class= "text3">Belum punya akun? </div>
         <div class="daftar">
             <a href=#box>Daftar disini</a>.</div>
+        
         <div class="foot"></div>
         <div class="text5">© 2021 Made by Tim RD 3</div>
 
