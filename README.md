@@ -3,7 +3,7 @@
 Tugas Mata Kuliah Rekayasa Perangkat Lunak
 
 
-Lakesia adalah website yang dapt digunakan oleh para lansia , dimana mereka dapat terhubung denga perawat puskesmas terdekat untuk dapat memeriksakan kesehatan
+Lakesia adalah website yang dapt digunakan oleh para lansia , dimana mereka dapat terhubung dengan perawat puskesmas terdekat untuk dapat memeriksakan kesehatan
 
 
 TIM RD 3:
