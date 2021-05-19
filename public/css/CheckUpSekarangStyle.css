@@ -1,0 +1,125 @@
+    .Lakesia-Logo {
+        position: absolute;
+        width: 180px;
+        height: 50px;
+        left: 62px;
+        top: 46px;
+    }
+    
+    .List-Kontak1 {
+        position: absolute;
+        width: 800px;
+        height: 70px;
+        left: 62px;
+        top: 200px;
+    }
+    
+    .List-Kontak2 {
+        position: absolute;
+        width: 800px;
+        height: 70px;
+        left: 62px;
+        top: 300px;
+    }
+    
+    .List-Kontak3 {
+        position: absolute;
+        width: 800px;
+        height: 70px;
+        left: 62px;
+        top: 400px;
+    }
+    
+    .CheckUpSekarang-text {
+        position: absolute;
+        width: 415px;
+        height: 48px;
+        left: 62px;
+        top: 130px;
+        font-family: Metropolis;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 48px;
+        /* identical to box height */
+        letter-spacing: 1px;
+        color: #000000;
+    }
+    
+    .Button {
+        background-color: #77EA7E;
+        border: none;
+        color: white;
+        padding: 17px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 38px;
+        font-family: Metropolis, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+    }
+    
+    .Button:hover {
+        background-color: #0a990a;
+        /* Green */
+        color: white;
+    }
+    
+    .InfoKontak1 {
+        font-size: 12px;
+        position: relative;
+        width: 35px;
+        height: 10px;
+        left: 700px;
+        top: 200px;
+    }
+    
+    .InfoKontak2 {
+        font-size: 12px;
+        position: relative;
+        width: 35px;
+        height: 10px;
+        left: 555px;
+        top: 300px;
+    }
+    
+    .InfoKontak3 {
+        font-size: 12px;
+        position: relative;
+        width: 35px;
+        height: 10px;
+        left: 410px;
+        top: 400px;
+    }
+    
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 24px;
+        left: 41%;
+        top: 40%;
+    }
+    
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .previous {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    
+    .round {
+        border-radius: 60%;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+    }
