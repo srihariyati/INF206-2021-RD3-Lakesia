@@ -16,35 +16,35 @@
         <div> <img class="medical-logo" src="/img/Medical-Logo.png" alt="Medical Logo"> </div>
         <div> <img class="profile-logo" src="/img/Profile-Logo.png" alt="Profile Logo"> </div>
         
+        <div >
+
         <form method="post">
             <table class="login">
-                <tr>
-                    <td>Username <br> <input type="text" name="user" placeholder="Enter Username" name="uname" required> </td>
-                </tr>
-                <tr>
-                    <td>Password <br> <input type="password" name="pass" placeholder="Enter Password" name="pass" required> </td>
-                </tr>
-                <tr>
+                
+                <tr> 
                     <td>
-                        Login sebagai: <select name="usertype">
-                            <option value="lansia">Lansia</option>
-                            <option value="perawat">Perawat</option>
-                        </select>
+                       <br> <a class="masuklansia" href=masuklansia>Masuk Sebagai Lansia</a>
                     </td>
-                </tr>
                 <tr>
-                    <td><button type="submit">Login</button></td>
+                    <td>    
+                       <br><br> <a class="masukperawat" href=masukperawat>Masuk Sebagai Perawat</a>
+                    </td>    
                 </tr>
-            </table>
-        </form>
         
-        <div class="text3">Belum punya akun?</div>
-        <div class="text4">Daftar disini</div>
+        <div class= "text3">Belum punya akun? </div>
+
+        <div class="daftar">
+            <a href=#box>Daftar disini</a>.</div>
+        
         <div class="foot"></div>
         <div class="text5">© 2021 Made by Tim RD 3</div>
 
-    </body>
-
-    
-
+        
+           <div id="box">
+               Daftar sebagai <br><br>
+               <a href=daftar/lansia class="lansia"> Lansia </a><br>
+               <a href=daftar/perawat class="perawat"> Perawat </a><br>
+               <a href=# class="batal"> x </a>
+            </div>
+        
 </html>
