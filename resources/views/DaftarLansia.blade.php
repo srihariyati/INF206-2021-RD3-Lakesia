@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,48 +10,53 @@
     <div class="container align-items-center justify-content-center">
         <br><br>
         <h1 class="mb-5">Daftar Disini</h1>
-        <form action="registration.php" method="post"></form>
+        <h5 class="mb-5">Akun Lansia</h5>
+        <form  method='' action="">
+
             <div class="row">
                 <div class="col-sm">
                     <label>Username</label>
-                    <input class="form-control" id="Username" type="text" name="Username" placeholder="Username" required>
+                    <input class="form-control" id="username_lan" type="text" name="username_lan" placeholder="Username" required>
                     <br>
                     <label>Password</label>
-                    <input class="form-control" id="password"  type="password" name="password" placeholder="******" required>
-                   
+                    <input class="form-control" id="password_lan"  type="password" name="password_lan" placeholder="Password" required>
+                    <br>
+                    <label>Konfirmasi Password</label>
+                    <input class="form-control" id="konfir_pas_lan" type="password" name="konfir_pas_lan"  placeholder="Konfirmasi Password" required>
+                    <br>
                                    
                 </div>
                 <div class="col-sm">
                     <label>Nama</label>
-                    <input class="form-control" id="nama_lansia"  type="text" name="nama_lansia" placeholder="Isi Disini" required>
+                    <input class="form-control" id="nama_lan"  type="text" name="nama_lan" placeholder="Nama" required>
                     <br>
                     <label>Nomor Telepon</label>
-                    <input class="form-control" id="no_hp"  type="text" name="no_hp" placeholder="+628" required>
+                    <input class="form-control" id="nohp_lan"  type="text" name="nohp_lan" placeholder="Nomor Telepom" required>
                     <br>
                     <label>Alamat</label>
-                    <input class="form-control" id="alamat"  type="text" name="alamat" placeholder="Isi Disini" required>
+                    <input class="form-control" id="alamat_lan"  type="text" name="alamat_lan" placeholder="Alamat" required>
                     <br>
-                    <label>Tinggi</label>
-                    <input class="form-control" id="tinggi"  type="text" name="tinggi" placeholder="Isi Disini" required>
+                    <label>Tinggi (cm)</label>
+                    <input class="form-control" id="tinggi"  type="text" name="tinggi" placeholder="Tinggi" required>
                     <br>
-                    <label>Berat</label>
-                    <input class="form-control" id="berat"  type="text" name="berat" placeholder="Isi Disini" required>
+                    <label>Berat (Kg)</label>
+                    <input class="form-control" id="berat"  type="text" name="berat" placeholder="Berat Badan" required>
                     <br>
                 </div>
                 <div class="col-sm">
                    
                    <label>Tanggal Lahir</label>
-                   <input class="form-control" id="tgl_lahir" placeholder="Tanggal Lahir"  type="date" name="tgl_lahir" required>
+                   <input class="form-control" id="tgllahir_lan" placeholder="Tanggal Lahir"  type="date" name="tgllahir_lan" required>
                    <br>
                    <label>Jenis Kelamin</label>
-                    <select class="form-control"> 
+                    <select class="form-control" id="jk_lan" name="jk_lan"> 
                         <option selected disabled >Pilih</option>
                         <option> Laki-laki </option>
                         <option> Perempuan </option>                        
                     </select> 
                     <br>
                     <label>Agama</label>
-                    <select class="form-control"> 
+                    <select class="form-control" id="agama" name="agama"> 
                         <option selected disabled >Pilih</option>
                         <option> Islam </option>
                         <option> Kristen Protestan </option>
@@ -60,7 +66,7 @@
                     </select> 
                     <br>
                     <label>Golongan Darah</label>
-                    <select class="form-control">
+                    <select class="form-control" id="goldar" name="goldar">
                         <option selected disabled>Pilih</option>
                         <option> A</option>
                         <option> B</option>
@@ -70,7 +76,7 @@
                     <br><br>
                     
                     <div class=" d-grid gap-2 col-6 mx-auto ">
-                    <input class="btn btn-primary   " type="submit" id="register" name="create" value="Daftar">
+                    <button class="btn btn-primary" type="submit" name="register"> Daftar</button>
                     </div>
                 </div>
             </div>
