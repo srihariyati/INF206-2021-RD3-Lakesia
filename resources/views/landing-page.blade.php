@@ -20,30 +20,19 @@
 
         <form method="post">
             <table class="login">
-                <tr>
-                    <td>Username <br> <input type="text" name="user" placeholder="Enter Username" name="uname" required> </td>
-                </tr>
-                <tr>
-                    <td>Password <br> <input type="password" name="pass" placeholder="Enter Password" name="pass" required> </td>
-                </tr>
-                <tr>
+                
+                <tr> 
                     <td>
-                        Login sebagai: <select name="usertype">
-                            <option value="lansia">Lansia</option>
-                            <option value="perawat">Perawat</option>
-                        </select>
+                       <br> <a class="masuklansia" href=masuklansia>Masuk Sebagai Lansia</a>
                     </td>
-                </tr>
                 <tr>
-                    <td><button type="submit">Login</button></td>
                     <td>    
                        <br><br> <a class="masukperawat" href=masukperawat>Masuk Sebagai Perawat</a>
                     </td>    
                 </tr>
-            </table>
-        </form>
         
         <div class= "text3">Belum punya akun? </div>
+
         <div class="daftar">
             <a href=#box>Daftar disini</a>.</div>
         
@@ -58,9 +47,4 @@
                <a href=# class="batal"> x </a>
             </div>
         
-
-        
-
-    
-
 </html>
