@@ -1,4 +1,18 @@
-
+<?php
+require ("functionsLansia.php");
+    if( isset($_POST["register"]) ){
+        if (registrasi($_POST)>0){
+            echo
+            "<script>
+                alert('Akun Lansia Berhasil Terdaftar !');
+                
+            </script>";
+            header('Location:LoginLansia.php');
+        }else{
+            echo mysqli_error($conn);
+        }
+    } 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +25,7 @@
         <br><br>
         <h1 class="mb-5">Daftar Disini</h1>
         <h5 class="mb-5">Akun Lansia</h5>
-        <form  method='' action="">
+        <form  method="POST" action="">
 
             <div class="row">
                 <div class="col-sm">
@@ -31,7 +45,7 @@
                     <input class="form-control" id="nama_lan"  type="text" name="nama_lan" placeholder="Nama" required>
                     <br>
                     <label>Nomor Telepon</label>
-                    <input class="form-control" id="nohp_lan"  type="text" name="nohp_lan" placeholder="Nomor Telepom" required>
+                    <input class="form-control" id="nohp_lan"  type="text" name="nohp_lan" placeholder="Nomor Telepon" required>
                     <br>
                     <label>Alamat</label>
                     <input class="form-control" id="alamat_lan"  type="text" name="alamat_lan" placeholder="Alamat" required>
