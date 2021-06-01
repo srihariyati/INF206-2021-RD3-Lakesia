@@ -87,5 +87,7 @@
             </div>
         </form>
     </div>
+    
+    <a onclick="history.back()" class="previous">&#8592;</a>
 </body>
 </html>
