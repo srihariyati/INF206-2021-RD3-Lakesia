@@ -1,8 +1,12 @@
+* {
+    font-family: Metropolis, Arial, Helvetica, sans-serif;
+}
+
 body {
     position: relative;
     width: auto;
     height: auto;
-    background-image: url(Background.png);
+    background-image: url(/img/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -272,4 +276,31 @@ Pop up --> menampilkan pop up untuk daftar jenis akun
     opacity: 0.8;
     font-size: 18pt;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 36px;
+    position: absolute;
+    left: 910px;
+    top: 426px;
+
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 60%;
+}
+
+.round {
+    border-radius: 60%;
 }

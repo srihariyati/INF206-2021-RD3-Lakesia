@@ -1,8 +1,12 @@
+* {
+    font-family: Metropolis, Arial, Helvetica, sans-serif;
+}
+
 body {
     position: relative;
     width: auto;
     height: auto;
-    background-image: url(Background.png);
+    background-image: url(/img/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -53,7 +57,7 @@ body {
     position: absolute;
     width: 58px;
     height: 58px;
-    left: 1050px;
+    left: 1080px;
     top: 180px;
 }
 
@@ -123,7 +127,7 @@ button:hover {
     position: absolute;
     width: 152px;
     height: 17px;
-    left: 980px;
+    left: 1005px;
     top: 400px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -139,7 +143,7 @@ button:hover {
     position: absolute;
     width: 97px;
     height: 17px;
-    left: 1110px;
+    left: 1137px;
     top: 400px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -179,7 +183,7 @@ button:hover {
 .masuklansia {
     background-color: #1EA5FC;
     color: white;
-    padding: 14px 30px;
+    padding: 14px 50px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -197,7 +201,7 @@ button:hover {
 .masukperawat {
     background-color: #1EA5FC;
     color: white;
-    padding: 14px 26px;
+    padding: 14px 43px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -220,14 +224,14 @@ Pop up --> menampilkan pop up untuk daftar jenis akun
 #box {
     background-color: #ffffff;
     width: 400px;
-    height: 200px;
+    height: 220px;
     text-align: center;
     padding: 15px;
     border-radius: 10px;
     color: #000000;
     display: none;
     position: absolute;
-    top: 500px;
+    top: 700px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -241,9 +245,10 @@ Pop up --> menampilkan pop up untuk daftar jenis akun
 }
 
 .batal {
-    width: 20px;
-    height: 20px;
-    background: #1EA5FC;
+    font-size: 28px;
+    width: 25px;
+    height: 25px;
+    background: #fc1e1e;
     border-radius: 50%;
     border: 3px solid #fff;
     display: block;
@@ -253,9 +258,13 @@ Pop up --> menampilkan pop up untuk daftar jenis akun
     position: absolute;
     top: -10px;
     right: -10px;
+    line-height: 20px;
 }
 
 .lansia {
+    position: absolute;
+    top: 60px;
+    left: 105px;
     display: inline-block;
     background-color: #1EA5FC;
     padding-inline-start: 0%;
@@ -263,27 +272,32 @@ Pop up --> menampilkan pop up untuk daftar jenis akun
     margin: 10px;
     border: none;
     cursor: pointer;
-    height: 30px;
+    height: 50px;
     width: 200px;
     border-radius: 20px;
-    font-size: 14pt;
+    font-size: 16pt;
     cursor: pointer;
     text-decoration: none;
+    line-height: 50px;
 }
 
 .perawat {
+    position: absolute;
+    top: 130px;
+    left: 105px;
     display: inline-block;
     background-color: #1EA5FC;
     color: white;
     margin: 10px;
     border: none;
     cursor: pointer;
-    height: 30px;
+    height: 50px;
     width: 200px;
     border-radius: 20px;
-    font-size: 14pt;
+    font-size: 16pt;
     cursor: pointer;
     text-decoration: none;
+    line-height: 50px;
 }
 
 .batal:hover {
