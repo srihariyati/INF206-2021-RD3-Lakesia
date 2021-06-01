@@ -7,9 +7,9 @@
     <title>LAKESIA | Check Up Sekarang</title>
 
     <!--css here-->
-    <link rel="stylesheet" href="/css/LansiaStyle.css">
-    <link rel="stylesheet" href="/css/CheckupStyle.css">
-    <link rel="stylesheet" href="/css/TableStyle.css">
+    <link rel="stylesheet" href="/css/CheckUpSekarang/LansiaStyle.css">
+    <link rel="stylesheet" href="/css/CheckUpSekarang/CheckupStyle.css">
+    <link rel="stylesheet" href="/css/CheckUpSekarang/TableStyle.css">
 
     <!-- js here-->
     <script src="\js\CheckUpSekarang.js"></script>

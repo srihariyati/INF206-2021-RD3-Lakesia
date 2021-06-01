@@ -7,8 +7,8 @@
     <title>LAKESIA | Dasboard</title>
 
     <!-- css here -->
-    <link rel="stylesheet" href="/css/CalendarStyle.css">
-    <link rel="stylesheet" href="/css/LansiaStyle.css">
+    <link rel="stylesheet" href="/css/Lansia/CalendarStyle.css">
+    <link rel="stylesheet" href="/css/Lansia/LansiaStyle.css">
     
 </head>
 <body>
@@ -29,25 +29,24 @@
                 </form>
                     <div class="button button-emergency">Emergency</div>
                 </div>
+
                 <div class="daftar-obat-box">
                     <div class="obat-text">Daftar Obat yang Harus Diminum</div>
-                    <table>
-                        <thead>
-                            <tr><br><br><br><br>
-                                <td>&nbsp;&nbsp;&nbsp;Nama Obat</td><br>
-                                <td>&nbsp;&nbsp;&nbsp;Jadwal</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($obat as $o)
-                            <tr>
-                                <td>&nbsp;&nbsp;&nbsp;{{$o->nama_obat}}</td>
-                                <td>&nbsp;&nbsp;&nbsp;{{$o->jadwal}}</td>
+                    <table class="list-obat">
+                        <tr class="judul-obat">
+                            <td class="nama-obat">Nama Obat</td> <!--Isi nama obat-->
+                            <td class="jadwal-obat">Jadwal</td> <!--Isi jadwal obat-->
+                        </tr>
+
+                        @foreach($obat as $o)
+                            <tr class="list-daftar">
+                                <td class="nama-obat">{{$o->nama_obat}}</td>
+                                <td class="jadwal-obat">{{$o->jadwal}}</td>
                             </tr>
                             @endforeach
-                        </tbody>
                     </table>
                 </div>
+
 
         <!-- info grafis lansia --> 
           <!--menampilkan data --> <!--start-->
@@ -56,19 +55,19 @@
             <div class="box-acs-1"></div>
             <div class="box-acs-2"></div>
             <div class="informasi-judul">Berat</div>
-            <div class="isi-informasi">{{$l->berat}} Kg</div>
+            <div class="informasi-isi">{{$l->berat}} Kg</div>
         </div>
         <div class="box-informasi golongan-darah">
             <div class="box-acs-1"></div>
             <div class="box-acs-2"></div>
             <div class="informasi-judul">Golongan darah</div>
-            <div class="isi-informasi">{{$l->goldar}}</div>
+            <div class="informasi-isi">{{$l->goldar}}</div>
         </div>
         <div class="box-informasi tinggi-badan">
             <div class="box-acs-1"></div>
             <div class="box-acs-2"></div>
             <div class="informasi-judul">Tinggi</div>
-            <div class="isi-informasi">{{$l->tinggi}} cm</div>
+            <div class="informasi-isi">{{$l->tinggi}} cm</div>
         </div>
 
         <div class="box-informasi denyut-nadi">
@@ -79,38 +78,62 @@
         </div>
         <!-- info grafis lansia END-->
 
-
-        
-     
-
         <!-- profil lansia-->
         <div class="circle-profil"></div>
         <div> <img class="foto-profil" src="/img/Profile-Logo.png" alt="Foto profil"></div>
         <div> <a style="color:red; left: 1400px;top: 40px;" href="/">Logout</a></div>
         <div class="box-name">{{$l->nama_lan}}</div>
         <div class="box-profil-1">
-       
-                <ul>
-                    <p class="data-profil">No.Id &emsp; &emsp; &emsp; &emsp; &emsp; :#{{$l->id_lan}}</p>
-                    <p class="data-profil">Tanggal Lahir &emsp; &emsp; : {{$l->tgllahir_lan}}</p>
-                    <p class="data-profil">Alamat &emsp; &emsp; &emsp; &emsp; &ensp;: {{$l->alamat_lan}}</p>
-                    <!--<p class="data-profil">Umur &emsp; &emsp; &emsp; &emsp; &emsp; : 67 tahun</p>-->
-                    <p class="data-profil">Agama &emsp; &emsp; &emsp; &emsp; &ensp;: {{$l->agama}}</p>
-                    <p class="data-profil">Jenis Kelamin &emsp; &nbsp;&ensp;&ensp;: {{$l->jk_lan}}</p>
 
-                    <!--nampilin dari data riwayat-->
-                    <!--<p class="data-profil">Riwayat Penyakit &ensp;&ensp;: Ginjal</p>-->
-                    <p class="data-profil">Golongan Darah &ensp; &ensp;: {{$l->goldar}}</p>
-                    <p class="data-profil">Berat Badan &emsp; &emsp; &ensp; : {{$l->berat}}Kg</p>
-                    <p class="data-profil">Berat Badan &emsp; &emsp; &ensp; : {{$l->tinggi}}Cm</p>
-                  
-                </ul>
+                <table class="data-diri">
+                <tr>
+                    <td class="judul-data-diri">No ID</td>
+                    <td>:</td>
+                    <td>#{{$l->id_lan}}</td> <!--Kolom isi data-->
+                </tr>
+                <tr>
+                    <td class="judul-data-diri">Tanggal lahir</td>
+                    <td>:</td>
+                    <td>{{$l->tgllahir_lan}}</td> <!--Kolom isi data-->
+                </tr>
+                <tr>
+                    <td class="judul-data-diri">Alamat</td>
+                    <td>:</td>
+                    <td>{{$l->alamat_lan}}</td> <!--Kolom isi data-->
+                </tr>
+                <tr>
+                    <td class="judul-data-diri">Agama</td>
+                    <td>:</td>
+                    <td>{{$l->agama}}</td> <!--Kolom isi data-->
+                </tr>
+                <tr>
+                    <td class="judul-data-diri">Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>{{$l->jk_lan}}</td> <!--Kolom isi data-->
+                </tr>
+                <tr>
+                    <td class="judul-data-diri">Golongan Darah</td>
+                    <td>:</td>
+                    <td>{{$l->goldar}}</td> <!--Kolom isi data-->
+                </tr>
+                <tr>
+                    <td class="judul-data-diri">Berat Badan</td>
+                    <td>:</td>
+                    <td>{{$l->berat}} Kg</td> <!--Kolom isi data-->
+                </tr>
+                <tr>
+                    <td class="judul-data-diri">Tinggi Badan</td>
+                    <td>:</td>
+                    <td>{{$l->tinggi}} cm</td> <!--Kolom isi data-->
+                </tr>
+            </table>
         </div>
         <div class="box-profil-2">
             <div class="square-profil"></div>
             <div> <img class="square-profil" src="/img/Profile-Logo.png" alt="Foto Profil"> </div>
-            <div class="nama-profil"><br/>{{$l->nama_lan}}</div>
-            <!--<div class="usia-profil"></div>-->
+            <table class="data-diri-singkat">
+                <tr><td class="data-nama">{{$l->nama_lan}}</td></tr> <!--Isi dengan nama pasien-->
+            </table>
         </div>          
         </div>
       
@@ -166,7 +189,7 @@
              <textarea style="width: 350px; height:200px;" name="note" required></textarea>
              <input style=" color:white;border:none;"name="username_lan" value="{{$l->username_lan}}"><br>
              <button type="submit">Simpan</button>
-             <a href=# class="batal" style="font-size:25px;">×</a>
+             <a href=# class="batal">×</a>
              </form>
     
           <!--menampilkan data --> <!--end-->
@@ -176,14 +199,14 @@
         </div>
         <div class="notes-box">
             <div class="notes-text">Notes</div>
-            <a style="font-size:50px; color:black; text-decoration:none;" href="#box">+</a> 
-            <table style="solid black;">
-            <br> <br>
+            <a class="tambah-button" href="#box">+</a> 
+            <table class="list-notes">
             @foreach($catatan as $c)
-            
-            <tr>{{$c->isi}}<br></tr>
+                <tr>
+                    <td>{{$c->isi}}</td> <!--Isi catatan-->
+                </tr>
             @endforeach
-            </table>        
+            </table>     
         </div>
        
 </body>

@@ -7,7 +7,7 @@
     <title>LAKESIA | LOGIN </title>
 
     <!-- css here-->
-    <link rel="stylesheet" href="../css/LoginPageStyle.css">
+    <link rel="stylesheet" href="/css/Login/LoginPageStyle.css">
 </head>
 <body>
     <div class="lakesia-text">Lakesia</div>
