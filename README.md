@@ -1,4 +1,4 @@
-<h align="center"><b>LAKESIA</b></h>
+## LAKESIA
 
 ## About Lakesia
 
