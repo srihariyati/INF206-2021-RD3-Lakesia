@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/img/lakesia-logo.png">
     <title>LAKESIA | Perawat</title>
 
     <!-- css here-->
     <link rel="stylesheet" href="/css/Perawat/PerawatStyle.css">
-    <link rel="stylesheet" href="/css\Perawat/CalendarStyle.css">
-    <link rel="stylesheet" href="/css/Perawat/TableStyle.css">
+    <link rel="stylesheet" href="/css/Perawat/CalendarStyle.css">
 </head>
 <body>
  
@@ -24,26 +25,6 @@
             <a href="/dasboard/perawat/daftarobat" class="button button-obat">Obat Pasien</a>
         </div>
 
-            <!--
-            <div class="column">
-                <img class="Background-Menu" src="\img\Rectangle 309.png"/>
-                <a href="/dasboard/perawat/lihatriwayatpasien" class= "Button Riwayat-Pasien">Riwayat Pasien</a>
-                <a href="/dasboard/perawat/daftarobat" class="Button Obat-Pasien">Obat Pasien</a>
-                <div class="Text-Menu">MENU</div>
-            </div>
-
-            -->
-            <!--
-            <div class= "column">
-                <img class= "Background-grid2" src="\img\grid.png"/>
-            </div>
-
-            
-            <div class= "column">
-                <img class= "Background-grid3" src="\img\grid.png"/>
-            </div>
-            -->
-          
             <!-- menampilkan data perawat disebelah kanan-->
         @foreach($perawat as $per)
         <div class="circle-profil"></div>
@@ -84,18 +65,6 @@
                     <td>{{$per->nama_pos}}</td> <!--Kolom isi data-->
                 </tr>
             </table>
-
-            <!--
-                <ul>
-                    <p class="data-profil">No.Id &emsp; &emsp; &emsp; &emsp; &emsp; :#{{$per->id}}</p>
-                    <p class="data-profil">No Pegawai &emsp; &emsp; :{{$per->no_per}}</p>
-                    <p class="data-profil">Tanggal Lahir &emsp; &emsp; : {{$per->tgllahir_per}}</p>
-                    <p class="data-profil">Alamat &emsp; &emsp; &emsp; &emsp; &ensp;: {{$per->alamat_per}}</p>
-                    <p class="data-profil">Jenis Kelamin &emsp; &nbsp;&ensp;&ensp;: {{$per->jk_per}}</p>
-                    <p class="data-profil">Asal Posyandu &emsp; &nbsp;&ensp;&ensp;: {{$per->nama_pos}}</p>
-                  
-                </ul>
-            -->
                 
         </div>
         <div class="box-profil-2">
@@ -107,8 +76,12 @@
         </div>
         
         <!-- table daftar nama lansia-->
-       
-            <table width=45% class="daftarnamalansia">
+
+        <div class="daftar-pasien-box">
+            <div class="daftar-pasien-text">Daftar Pasien</div>
+        </div>
+
+            <table width=45% class="daftar-nama-lansia">
                 <thead>
                     <tr>
                         <td class="header">Nama Lansia</td>
@@ -125,20 +98,23 @@
                         <form method="post" action='/dasboard/perawat/tambahriwayat'>
                         {{ csrf_field() }}
                         <input style="width:10px;background-color:transparent;border:none;color:transparent;" name="username_lan" value="{{$lan->username_lan}}">
-                        <button style="background-color:blue;color:pink" type="submit">Tambah Riwayat</button>
+                        <input style="width:10px;background-color:transparent;border:none;color:transparent;" name="nama_lan" value="{{$lan->nama_lan}}">
+                        <input style="width:10px;background-color:transparent;border:none;color:transparent;" name="alamat_lan" value="{{$lan->alamat_lan}}">
+                        <button class="tombol-tambah" type="submit">Tambah Riwayat</button>
                         </form>
 
                         <form method="post" action='/dasboard/perawat/tambahobat'>
                         {{ csrf_field() }}
                         <input style="width:10px; background-color:transparent;border:none;color:transparent;" name="username_lan" value="{{$lan->username_lan}}">
-                        <button style="background-color:blue;color:pink" type="submit">Tambah Obat</button>
+                        <input style="width:10px;background-color:transparent;border:none;color:transparent;" name="nama_lan" value="{{$lan->nama_lan}}">
+                        <input style="width:10px;background-color:transparent;border:none;color:transparent;" name="alamat_lan" value="{{$lan->alamat_lan}}">
+                        <button class="tombol-tambah" type="submit">Tambah Obat</button>
                         </form>
                         </td>
                     </tr>
             @endforeach
             @endforeach
             </table>
-        </div>
 
          
         <!--calender-->

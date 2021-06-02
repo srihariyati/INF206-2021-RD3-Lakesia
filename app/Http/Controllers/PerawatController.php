@@ -79,21 +79,28 @@ class PerawatController extends Controller
 
     public function tambahRiwayat(Request $request)
     {        
-       $lansia =$request->username_lan;
         return view('formtambahriwayat',['lansia'=>$lansia]);
+        $username_lan =$request->username_lan;
+        $nama_lan = $request->nama_lan;
+        $alamat_lan= $request->alamat_lan;
+         return view('formtambahriwayat')
+         ->with(['username_lan'=>$username_lan])
+         ->with(['nama_lan'=>$nama_lan])
+         ->with(['alamat_lan'=>$alamat_lan]);
     }
 
     public function insertRiwayat(Request $request)
     {
         DB::table('riwayatcheckup')->insert([
             'username_lan'=>$request->username_lan,
+            'nama_lan'=>$request->nama_lan,
+            'alamat_lan'=>$request->alamat_lan,
             'tanggal'=>$request->tgl,
             'tekanandarah'=>$request->tekanandarah,
             'guladarah'=>$request->gula,
             'asamurat'=>$request->asamurat,
             'kolesterol'=>$request->kolesterol,
             'nama_pemeriksa'=>$request->nama_per
-
         ]);
         echo"<script>alert('Berhasil Menambahkan Riwayat');</script>";
 
@@ -108,14 +115,21 @@ class PerawatController extends Controller
 
     public function tambahObat(Request $request)
     {        
-       $lansia =$request->username_lan;
-        return view('formtambahobat',['lansia'=>$lansia]);
+       $username_lan   = $request->username_lan;
+       $nama_lan       = $request->nama_lan;
+       $alamat_lan     = $request->alamat_lan;
+        return view('formtambahobat')
+        ->with(['username_lan'=>$username_lan])
+        ->with(['nama_lan'=>$nama_lan])
+        ->with(['alamat_lan'=>$alamat_lan]);
     }
 
     public function insertObat(Request $request)
     {
         DB::table('daftarobat')->insert([
             'username_lan'=>$request->username_lan,
+            'nama_lan'=>$request->nama_lan,
+            'alamat_lan'=>$request->alamat_lan,
             'nama_obat'=>$request->namaobat,
             'jadwal'=>$request->jadwal,
         ]);
