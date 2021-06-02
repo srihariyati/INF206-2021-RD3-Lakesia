@@ -122,10 +122,10 @@
 
 .calendar-box {
     position: absolute;
-    width: 253px;
-    height: 320px;
-    left: 323px;
-    top: 137px;
+    width: 265px;
+    height: 240px;
+    left: 1040px;
+    top: 477px;
 
     background: rgba(196, 196, 196, 0.25);
     border-radius: 30px;
@@ -177,9 +177,9 @@
 .daftar-pasien-box {
     position: absolute;
     width: 663px;
-    height: 248px;
+    height: 581px;
     left: 323px;
-    top: 470px;
+    top: 137px;
 
     background: rgba(196, 196, 196, 0.25);
     border-radius: 30px;
@@ -380,7 +380,7 @@
 .daftar-nama-lansia {
     position: absolute;
     left: 350px;
-    top: 545px;
+    top: 235px;
 }
 
 .header {
@@ -394,7 +394,10 @@
 }
 
 .tombol-tambah {
-    background-color:blue;
-    color:pink;
+    width: 80px;
+    height: 18px;
+    background-color:rgb(115, 115, 223);
+    color:beige;
     cursor: pointer;
+    font-size: 10px;
 }

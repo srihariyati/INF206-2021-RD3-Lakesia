@@ -81,7 +81,7 @@
                 <div class="daftar-pasien-text">Daftar Pasien</div>
             </div>
 
-                <table width=45% class="daftar-nama-lansia">
+                <table width=52% class="daftar-nama-lansia">
                     <thead>
                         <tr>
                             <td class="header">Nama Lansia</td>
