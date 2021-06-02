@@ -85,6 +85,7 @@
     position: absolute;
     top: 480px;
     background: red;
+    text-decoration: none;
 }
 
 .daftar-obat-box {
@@ -504,4 +505,54 @@
     position: absolute;
     top: -5px;
     right: -10px;
+}
+
+#box-emergency {
+    background-color: #ffffff;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000000;
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#box-emergency:target {
+    display: block;
+}
+
+.emergency-text {
+    text-align: center;
+
+    font-size: 25px;
+}
+
+.call-logo {
+    width: 30px;
+    position: absolute;
+    left: 80px;
+    top: 160px;
+}
+
+.call-nomor {
+    font-size: 30px;
+    position: absolute;
+    left: 135px;
+    top: 163px;
+}
+
+.call-tempat {
+    font-size: 13px;
+    position: absolute;
+    left: 30px;
+    top: 268px;
 }

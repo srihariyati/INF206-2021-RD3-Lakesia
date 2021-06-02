@@ -99,7 +99,7 @@
     font-size: 18px;
     color: #FFFFFF;
 
-    background: #1EA5FC;
+    background: #2483F3;
     border-radius: 70px;
 
     cursor: pointer;
@@ -107,6 +107,7 @@
 }
 
 .button:hover {
+    opacity: 70%;
     font-size: 20px;
 }
 

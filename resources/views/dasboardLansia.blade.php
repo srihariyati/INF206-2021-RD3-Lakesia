@@ -27,7 +27,9 @@
                     <input style=" background-color:transparent;color:transparent;border:none;"name="username_lan" value="{{$l->username_lan}}" readonly><br>
                         <button type="submit" class="button button-cek-up">Check Up Sekarang</button>
                     </form>
-                        <div class="button button-emergency">Emergency</div>
+                        <a href="#box-emergency" class="button button-emergency">
+                            Emergency Call
+                        </a>
                     </div>
 
                     <div class="daftar-obat-box">
@@ -203,6 +205,17 @@
                     </tr>
                 @endforeach
                 </table>     
+            </div>
+
+            <div id="box-emergency">
+                <br><br>
+                <div class="emergency-text">Unit Gawat Darurat</div>
+                <div>
+                    <img class="call-logo" src="/img/call.png" alt="call logo">
+                </div>
+                <div class="call-nomor">0811-689-110</div>
+                <div class="call-tempat">Unit Pelayanan Ambulance Dinas Kesehatan Banda Aceh</div>
+                <a href=# class="batal"> x </a>
             </div>
         
     </body>
