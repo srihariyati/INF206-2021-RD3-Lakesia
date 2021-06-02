@@ -79,10 +79,6 @@ class PerawatController extends Controller
 
     public function tambahRiwayat(Request $request)
     {        
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
         $username_lan =$request->username_lan;
         $nama_lan = $request->nama_lan;
         $alamat_lan= $request->alamat_lan;
