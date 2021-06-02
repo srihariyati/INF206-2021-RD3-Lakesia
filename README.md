@@ -1,18 +1,20 @@
-Tugas Mata Kuliah Rekayasa Perangkat Lunak
+<p align="center" style="font-size:100px; color:#87B9E7;">LAKESIA</p>
+
+## About Lakesia
+
+Lakesia merupakan sebuah project dari mata kuliah Rekayasa Perangkat Lunak Jurusan Informatika Universitas Syiah Kuala. Lakesia adalah sebuah website yang dapat digunakan oleh para lansia, dimana mereka dapat terhubung dengan perawat puskesmas terdekat untuk dapat memeriksakan kesehatan. Lansia dapat menggunakan website ini untuk dapat terhubung dengan tenaga medis di posyandu lansia. Lansia dapat melihat riwayat pemeriksaan kesehatan yang telah dilakukan. Perawat dapat melihat data lansia beserta riwayat kesehatannya. 
 
 
-Lakesia adalah website yang dapt digunakan oleh para lansia , dimana mereka dapat terhubung dengan perawat puskesmas terdekat untuk dapat memeriksakan kesehatan.
-Lansia dapat menggunakan website ini untuk dapat terhubung dengan tenaga medis di posyandu lansia. Lansia dapat melihat riwayat pemeriksaan kesehatan yang telah dilakuakan. Perawat dapat melihat data lansia beserta riwayat kesehatannya.
+## Tim Member
+Tim RD 3
 
+- Ariq Yuda Pratama [1908107010025] [https://github.com/riqyud]
+- Glorya Rossana Arbi [1908107010096] [https://github.com/GloryaRossanaArbi]
+- Muhammad Shabri Rabbani [1908107010041] [https://github.com/shabrirabbani]
+- Samuel Wasini [1908107010095] [https://github.com/samuyelwasini]
+- Sri Hariyati [1908107010018] [https://github.com/srihariyati]
 
-TIM RD 3:
-Sri Hariyati [1908107010018]
-Ariq Yuda Pratama [1908107010025]
-Muhammad Shabri Rabbani [1908107010041]
-Samuel Wasini [1908107010085]
-Glorya Rossana Arbi [1908107010096]
-
-
-
-
-http://informatika.unsyiah.ac.id/webinf/
+## 
+- http://informatika.unsyiah.ac.id/webinf/
+- https://fmipa.unsyiah.ac.id/fmipa/
+- https://unsyiah.ac.id/
