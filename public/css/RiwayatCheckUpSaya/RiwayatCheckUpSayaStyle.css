@@ -1,0 +1,56 @@
+.tabel-riwayat {
+    position: absolute;
+    left: 120px;
+    top: 200px;
+    width: 80%;
+
+    font-family: Metropolis, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px;
+    /* identical to box height */
+    letter-spacing: 1px;
+    color: #000000;
+
+}
+
+#t01 tr:nth-child(even){
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+#t01 tr:nth-child(odd){
+    background-color: lightgray;
+    color: black;
+}
+
+#t01 th{
+    background-color: #1EA5FC;
+    color: beige;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1px 18px;
+    font-size: 36px;
+    position: absolute;
+    left: 40px;
+    top: 45px;
+
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 60%;
+}
