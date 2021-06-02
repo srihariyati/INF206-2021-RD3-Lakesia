@@ -79,7 +79,7 @@ class PerawatController extends Controller
 
     public function tambahRiwayat(Request $request)
     {        
-        return view('formtambahriwayat',['lansia'=>$lansia]);
+
         $username_lan =$request->username_lan;
         $nama_lan = $request->nama_lan;
         $alamat_lan= $request->alamat_lan;
