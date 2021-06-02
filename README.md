@@ -1,4 +1,4 @@
-<p align="center" style="font-size:100px; color:#87B9E7;">LAKESIA</p>
+<h align="center"><b>LAKESIA</b></h>
 
 ## About Lakesia
 
